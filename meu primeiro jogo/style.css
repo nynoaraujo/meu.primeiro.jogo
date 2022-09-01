@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display+SC:wght@400;700&family=Roboto:ital,wght@0,400;1,900&family=Rubik+Dirt&display=swap');
+
+:root {
+  font-size: 16px;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Roboto', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding-top: 0;
+}
+
+.table {
+  background-image: url(https://i.pinimg.com/originals/b9/87/4b/b9874bc3ff4b8f60133ee8cf56981572.jpg);
+  height: 100vh;
+  padding-top: 5rem;
+  
+}
+
+.container {
+  margin: 0 auto;
+  width: 40vw;
+}
+
+.title {
+  color: white;
+}
+
+.score {
+  color: white;
+}
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  gap: 0.5rem;
+
+   background-image: url(https://new.safernet.org.br/sites/default/files/contents/memory.png);
+  width: 40vw;
+  padding: 0,5rem;
+
+  border-radius: 0.625rem;
+  box-shadow: 0.875rem 0.875rem 0 0 #0004;
+}
+
+.title {
+  border: 10px solid rebeccapurple;
+}
+
+.card {
+display: flex;
+align-items: center;
+justify-content: center;
+
+font-weight: 400;
+  width: 5rem;
+  height: 6rem;
+  background-color: purple;
+  border-radius: 0.625rem;
+
+  cursor: pointer;
+  color: transparent;
+
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.open {
+  content: url(https://poplembrancinhas.com.br/wp-content/uploads/2020/09/desenho-de-dragon-ball-z-1.jpg);
+  color:  rgb(253, 253, 253);
+  transform: rotateY(0deg);
+
+}
